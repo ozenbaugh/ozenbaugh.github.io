@@ -56,6 +56,11 @@
 			height:100%;
 		}
 
+		#sound1{
+			visibility: hidden;
+			display: none;
+		}
+
 
 	</style>
 
@@ -123,7 +128,7 @@
 
 
 <div class="split bottom-half">
-	<audio id="sound1" src="robert1.mp3" preload="auto"></audio>
+	<audio controls loop id="sound1" src="robert1.wav" preload="auto"></audio>
 	<button id="button1" onclick="myFunction(); nightLight(); nosferatu(); toggleSound();" class></button>
 </div>
 
