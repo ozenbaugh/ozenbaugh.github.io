@@ -1,49 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>THE CHAMPIONS</title>
+	<title>LIVERPOOL 2020 PREMIER LEAGUE CHAMPIONS!!!!!</title>
 	<style type="text/css">
-		.img-container  {
-			text-align: center;
+		.split {
+			height:50%;
+			width:100%;
+			position:fixed;
+			z-index:1;
+			overflow-y: hidden;
 		}
-		.button-container {
+
+		.top-half  {
 			text-align: center;
+			top: 0;
+			
+		}
+		.bottom-half {
+			text-align: center;
+			bottom:0;
+			
 		}
 		img {
 
-			border: 25px solid white;
 			
+
 		
 		}
-		button{
-			width:100px;
-			height:50px;
+		#button1{
+			background: url("https://i.imgur.com/JCb5ga0.png");
+			width: 160px;
+			height: 227px;
+			margin-top:50px;
+
 		}
+
+		#button1.active {
+			background: url("https://i.imgur.com/bEIfEsB.png");
+			width: 160px;
+			height: 227px;		
+			margin-top:50px;	
+		}
+
+		body {
+			background-color:black;
+		}
+
+		.dark-mode {
+			background-color: white;
+		}
+
+		#nosferatu2{
+			visibility: hidden;
+		}
+
 
 	</style>
 
 	<script type="text/javascript">
 		function myFunction() {
-  				document.getElementById('face').src="https://media.giphy.com/media/Vi13hTM2a04TcRvh7n/giphy.gif";
+  				/*
+				var style = document.getElementById('button1').style;
+
+				if (style == 'background: url("https://i.imgur.com/JCb5ga0.png"); width: 160px; height: 227px;') {
+					document.getElementById('button1').style='background: url("https://i.imgur.com/bEIfEsB.png"); width: 160px; height: 227px;';
+					alert("yay");
+				}
+  				
+				else {
+					if (style == 'background: url("https://i.imgur.com/bEIfEsB.png"); width: 160px; height: 227px;') {
+						document.getElementById('button1').style='background: url("https://i.imgur.com/JCb5ga0.png"); width: 160px; height: 227px;';
+					}
+				}
+  				*/
+
+  				let theToggle = document.getElementById("button1");
+  				theToggle.classList.toggle('active')
 
 
+  				
+  				
 
-  				setTimeout(function() {document.getElementById('face').src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thesun.co.uk%2Fwp-content%2Fuploads%2F2020%2F08%2Fcrop-12486757.jpg%3Fstrip%3Dall%26quality%3D100%26w%3D838%26h%3D558%26crop%3D1&f=1&nofb=1"}, 15000);
 
   			
+  				
+  			
 			}
+
+		function nightLight() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+		}
+
+		function nosferatu() {
+			var x = document.getElementById('nosferatu2');
+			if (x.style.visibility === 'visible') {
+				x.style.visibility = 'hidden';
+			} else {
+				x.style.visibility = 'visible';
+			}
+		}
 	</script>
 </head>
 <body>
-<div class="img-container">
-	<img id="face" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thesun.co.uk%2Fwp-content%2Fuploads%2F2020%2F08%2Fcrop-12486757.jpg%3Fstrip%3Dall%26quality%3D100%26w%3D838%26h%3D558%26crop%3D1&f=1&nofb=1">
+<div class="split top-half">
 
+	<img id="nosferatu2" src="https://cdn.vox-cdn.com/thumbor/x5KQ8x3VfSfA0y2a6-AdA7SuV3U=/0x0:720x480/1400x1400/filters:focal(0x0:720x480):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/46746890/nosferatu.0.0.jpg">
 	
 </div>
-<div class="button-container">
+
+
+
+<div class="split bottom-half">
 	<audio id="sound1" src="robert1.mp3" preload="auto"></audio>
-	<button onclick="document.getElementById('sound1').play(); myFunction();">NAUGHTY LEON</button>
+	<button id="button1" onclick="myFunction(); nightLight(); nosferatu();" class></button>
 </div>
+
+
+
+
 
 
 </body>
