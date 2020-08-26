@@ -102,6 +102,15 @@
 				x.style.visibility = 'visible';
 			}
 		}
+
+		function toggleSound() {
+			var audioElem = document.getElementById('sound1');
+			if (audioElem.paused) {
+				audioElem.play()
+			} else {
+				audioElem.pause();
+			}
+		}
 	</script>
 </head>
 <body>
@@ -115,7 +124,7 @@
 
 <div class="split bottom-half">
 	<audio id="sound1" src="robert1.mp3" preload="auto"></audio>
-	<button id="button1" onclick="myFunction(); nightLight(); nosferatu();" class></button>
+	<button id="button1" onclick="myFunction(); nightLight(); nosferatu(); toggleSound();" class></button>
 </div>
 
 
