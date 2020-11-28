@@ -1,141 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>LIVERPOOL 2020 PREMIER LEAGUE CHAMPIONS!!!!!</title>
-	<style type="text/css">
-		.split {
-			height:50%;
-			width:100%;
-			position:fixed;
-			z-index:1;
-			overflow-y: hidden;
-		}
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-		.top-half  {
-			text-align: center;
-			top: 0;
-			
-		}
-		.bottom-half {
-			text-align: center;
-			bottom:0;
-			
-		}
-		img {
+.bgimg {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbilder.bild.de%2Ffotos-skaliert%2Fronny-hertha-bsc-47209267-42304532%2F2%2Cw%3D1280%2Cc%3D0.bild.jpg&f=1&nofb=1");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
 
-			
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
 
-		
-		}
-		#button1{
-			background: url("https://i.imgur.com/JCb5ga0.png");
-			width: 160px;
-			height: 227px;
-			margin-top:50px;
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
 
-		}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-		#button1.active {
-			background: url("https://i.imgur.com/bEIfEsB.png");
-			width: 160px;
-			height: 227px;		
-			margin-top:50px;	
-		}
-
-		body {
-			background-color:black;
-		}
-
-		.dark-mode {
-			background-color: white;
-		}
-
-		#nosferatu2{
-			visibility: hidden;
-			width:100%;
-			height:100%;
-		}
-
-		#sound1{
-			visibility: hidden;
-			display: none;
-		}
-
-
-	</style>
-
-	<script type="text/javascript">
-		function myFunction() {
-  				/*
-				var style = document.getElementById('button1').style;
-
-				if (style == 'background: url("https://i.imgur.com/JCb5ga0.png"); width: 160px; height: 227px;') {
-					document.getElementById('button1').style='background: url("https://i.imgur.com/bEIfEsB.png"); width: 160px; height: 227px;';
-					alert("yay");
-				}
-  				
-				else {
-					if (style == 'background: url("https://i.imgur.com/bEIfEsB.png"); width: 160px; height: 227px;') {
-						document.getElementById('button1').style='background: url("https://i.imgur.com/JCb5ga0.png"); width: 160px; height: 227px;';
-					}
-				}
-  				*/
-
-  				let theToggle = document.getElementById("button1");
-  				theToggle.classList.toggle('active')
-
-
-  				
-  				
-
-
-  			
-  				
-  			
-			}
-
-		function nightLight() {
-			var element = document.body;
-			element.classList.toggle("dark-mode");
-		}
-
-		function nosferatu() {
-			var x = document.getElementById('nosferatu2');
-			if (x.style.visibility === 'visible') {
-				x.style.visibility = 'hidden';
-			} else {
-				x.style.visibility = 'visible';
-			}
-		}
-
-//		function toggleSound() {
-//			var audioElem = document.getElementById('sound1');
-//			if (audioElem.paused) {
-//				audioElem.play()
-//			} else {
-//				audioElem.pause();
-//			}
-//		}
-	</script>
-</head>
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
 <body>
-<div class="split top-half">
 
-	<img id="nosferatu2" src="https://www.herthabsc.de/images//News/16320_Ronny-Spieltag_640x360.jpg">
-	
+<div class="bgimg">
+  <div class="topleft">
+    <p>Logo</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>2025</p>
+  </div>
+  <div class="bottomleft">
+    <p>Some text</p>
+  </div>
 </div>
-
-
-
-<div class="split bottom-half">
-	<audio controls loop id="sound1" src="robert1.wav" preload="auto"></audio>
-	<button id="button1" onclick="myFunction(); nightLight(); nosferatu(); toggleSound();" class></button>
-</div>
-
-
-
-
-
 
 </body>
 </html>
