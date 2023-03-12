@@ -1,65 +1,196 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ronny</title>
-  </head>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bravoStyle.css">
 
-.bgimg {
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbilder.bild.de%2Ffotos-skaliert%2Fronny-hertha-bsc-47209267-42304532%2F2%2Cw%3D1280%2Cc%3D0.bild.jpg&f=1&nofb=1");
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: black;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"> 
+    
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
+    <!-- P.S.: The structure of this site is being tweaked for displaying the art of Bravo TKO -->
+    
+    <title>BRAVO TKO</title>
+</head>
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p>2025</p>
-  </div>
-  <div class="bottomleft">
-    
-  </div>
-</div>
+    <img class="profile" src="images/profileDONE.png" alt="bread">
 
+    <header>
+        <h1 class="centerGreen">Bravo TKO</h1>
+        <aside class="center">some kind of slogan here</aside>
+    </header>
+        
+        <h2>You're here because you are interested in a commission. Here is what I offer:
+
+        </h2>
+        
+
+        
+        <button class="accordion">Tier 1 ($250)<br><br>Extra Detail</button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <img class="photo" src="images/250/arch3.jpg" alt="arch3" width="460" height="345">
+        <img class="photo" src="images/250/gungnir2C.jpg" alt="arch3" width="460" height="345">
+        <img class="photo" src="images/250/sicarius1.jpg" alt="sicarius1" width="460" height="345">
+        </div>
+<!--
+    <div class="tierBackground">
+        <h3>Tier 1 ($250)</h3>
+        <h4>Extra Detail</h4>
+    </div>
+
+    <button onmousedown="tier1show()">Show/Hide</button>
+
+    <div id="tier1">
+
+        <ul>
+            <li>Quidem, debitis, maiores eius temporibus soluta at ullam accusantium ipsum perspiciatis minima nemo commodi qui ut voluptatum consequatur officia fugit sunt mollitia?</li>
+        </ul>
+
+        <img class="photo" src="images/250/arch3.jpg" alt="arch3" width="460" height="345">
+        <img class="photo" src="images/250/gungnir2C.jpg" alt="arch3" width="460" height="345">
+        <img class="photo" src="images/250/sicarius1.jpg" alt="sicarius1" width="460" height="345">
+        
+    </div>
+    
+    <div class="tierBackground">
+        <h3>Tier 2 ($200)</h3>
+        <h4>Model + Background</h4>
+    </div>
+
+    <button onmousedown="tier2show()">Show/Hide</button>
+        
+    
+    <div id="tier2">
+        <ul>
+            <li>Vel, maiores maxime natus officia eum, nam atque placeat, itaque dolorem minus autem alias dolorum neque facere pariatur? Quaerat aliquid a culpa.</li>
+        </ul>
+
+        <img class="photo" src="images/200/coach.jpg" alt="coach" width="460" height="345">
+        <img class="photo" src="images/200/cozplayer.jpg" alt="cozplayer" width="460" height="345">
+        <img class="photo" src="images/200/Umbrxs2.jpg" alt="Umbrxs2" width="460" height="345">
+        <img class="photo" src="images/200/us.jpg" alt="us" width="460" height="345">
+    </div>
+
+    <div class="tierBackground">
+        <h3>Tier 3 ($100)</h3>
+        <h4>Model w/o Background</h4>   
+    </div>
+
+    <button onmousedown="tier3ashow()">Show/Hide</button>
+
+    <div id="tier3a">
+        <ul>
+            <li>Dignissimos nesciunt vero vitae laborum! Explicabo beatae molestiae quisquam quibusdam id sunt, nobis libero rerum, ipsam eos est ad labore possimus mollitia.</li>
+        </ul>
+
+        <img class="photo" src="images/100.1/kotsalyn.jpg" alt="kotsalyn" width="460" height="345">
+    </div>
+    
+    <div class="tierBackground">
+        <h4>Model Half-Body</h4>
+    </div>   
+
+    <button onmousedown="tier3bshow()">Show/Hide</button>
+    
+    <div id="tier3b">
+        <ul>
+            <li>Vel, maiores maxime natus officia eum, nam atque placeat, itaque dolorem minus autem alias dolorum neque facere pariatur? Quaerat aliquid a culpa.</li>
+        </ul>
+    
+
+        <img class="photo" src="images/100.2/gungnir.jpg" alt="gungnir" width="460" height="345">
+    </div>
+
+    <div class="tierBackground">
+        <h3>Tier 4 ($50)</h3>
+        <h4>Cartoon + Profile Pictures</h4> 
+
+    </div>   
+    
+    <button onmousedown="tier4show()">Show/Hide</button> 
+    
+    <div id="tier4">    
+        <ul>
+            <li>Quidem, debitis, maiores eius temporibus soluta at ullam accusantium ipsum perspiciatis minima nemo commodi qui ut voluptatum consequatur officia fugit sunt mollitia?</li>
+        </ul>
+
+        <img class="photo" src="images/50/PFP.jpg" alt="gungnir" width="460" height="345">
+    </div>
+        -->
+    
+    <hr>
+    
+    <h2>Additional information</h2>
+    <p>blah blah blah</p>
+
+
+    
+<script>
+function tier1show() {
+  var x = document.getElementById("tier1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+
+function tier2show() {
+  var x = document.getElementById("tier2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+
+function tier3ashow() {
+  var x = document.getElementById("tier3a");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+
+function tier3bshow() {
+  var x = document.getElementById("tier3b");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+
+function tier4show() {
+  var x = document.getElementById("tier4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
 </body>
 </html>
