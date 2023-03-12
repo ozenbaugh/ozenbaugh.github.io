@@ -37,7 +37,6 @@
 
 
  .tierBackground{
-  background-image: url(images/gradient.png);
   background-size:cover;
   color:white;
   padding: 10px;
@@ -67,7 +66,6 @@
 }
 
 .accordion, .panel{
-  background-image: url(images/gradient.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color:white;
