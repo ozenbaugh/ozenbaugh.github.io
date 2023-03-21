@@ -22,7 +22,8 @@ img {
 .photo {
 
 	object-fit: contain;
-	margin:auto;
+	max-width:100%;
+
 	
 }
 #tier1, #tier2, #tier3a, #tier3b, #tier4 {
@@ -57,9 +58,13 @@ img {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	padding-left: 18px;
 	padding-bottom: 13px;
 }
+
+.text {
+	padding-left: 18px;
+}
+
 .accordion, .panel {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
