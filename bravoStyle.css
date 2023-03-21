@@ -16,14 +16,14 @@ body {
 	background-color: #a39794;
 }
 
-img {
-	border-top: 2px white;
-}
 .photo {
 
-	object-fit: scale-down;
+	object-fit: cover;
 	max-width:100%;
-
+	border-top: 2px white;
+	border-left: 2px white;
+	border-style: solid;
+	margin:auto;
 	
 }
 #tier1, #tier2, #tier3a, #tier3b, #tier4 {
