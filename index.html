@@ -1,271 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bravoStyle.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"> 
-    
-    <!-- FOR THE CURIOUS: This site was made by @thebarrytone. Don't tell my mom. -->
-    <!-- P.S.: The structure of this site is being tweaked for displaying the art of Bravo TKO -->
-    
-    <title>BRAVO TKO</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="bravoStyle.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"><!-- FOR THE CURIOUS: This site was made by @thebarrytone. Don't tell my mom. -->
+	<!-- P.S.: The structure of this site is being tweaked for displaying the art of Bravo TKO -->
+	<title>TKO Commissions</title>
 </head>
-
 <body>
-
-    <img class="profile" src="images/profileDONE.png" alt="bread">
-
-    <header>
-        <h1 class="centerGreen">Bravo TKO</h1>
-        <aside class="center">SLOGAN HERE</aside>
-    </header>
-        
-        <h2>You're here because you are interested in a commission. Here is what I offer:
-
-        </h2>
-        
-        
-        <button class="accordion" id="grad1">Tier 1 ($250)<br><br><p class="subheader">Extra Detail</p></button>
-        <div class="panel" id="grad1">
-        <p>Commissions, generally with a background, with heavy detail and consideration into object shape, lighting, and position in environment</p>
-        <img class="photo" id="myImg" src="images/250/arch3.jpg" alt="arch3" width="460" height="345">
-
-        <img class="photo" src="images/250/gungnir2C.jpg" alt="arch3" width="460" height="345">
-        <img class="photo" src="images/250/sicarius1.jpg" alt="sicarius1" width="460" height="345">
-        <img class="photo" src="images/250/com - RunWilde.jpg" alt="sicarius1" width="460" height="345">
-        </div>
-
-        <button class="accordion" id="grad1">Tier 2 ($200)<br><br><p class="subheader">with Background</p></button>
-        <div class="panel" id="grad1">
-        <p>Commissions with a background and character in the foreground, with consideration to detail</p>
-        <img class="photo" src="images/200/Chief_infinite.jpg" alt="coach" width="460" height="345">
-        <img class="photo" src="images/200/cozplayer.jpg" alt="cozplayer" width="460" height="345">
-        <img class="photo" src="images/200/Umbrxs2.jpg" alt="Umbrxs2" width="460" height="345">
-        <img class="photo" src="images/200/us.jpg" alt="us" width="460" height="345">
-        <img class="photo" src="images/200/IMP filter.jpg" alt="us" width="460" height="345">
-        </div>
-
-        <button class="accordion" id="grad1">Tier 3 ($100)<br><br><p class="subheader">without background</p></button>
-        <div class="panel" id="grad1">
-        <p>Commissions with a single full-body character, with some level of detail and no background</p>
-        <img class="photo" src="images/100a/kotsalyn.jpg" alt="kotsalyn" width="460" height="345">
-        <img class="photo" src="images/100a/Com - Bruncher 2.jpg" alt="kotsalyn" width="460" height="345">
-        </div>
-
-        <button class="accordion" id="grad1">Tier 3b ($100)<br><br><p class="subheader">Half-Body</p></button>
-        <div class="panel" id="grad1">
-        <p>Commissions composed of a character from the torso-up, with some level of detail</p>
-        <img class="photo" src="images/100b/gungnir.jpg" alt="gungnir" width="460" height="345">
-        </div>
-
-        <button class="accordion" id="grad1">Tier 4 ($75)<br><br><p class="subheader">Cartoon/PFP</p></button>
-        <div class="panel" id="grad1">
-        <p>Commissioned profile pictures ,typically in a ‘cartoon’ format</p>
-        <img class="photo" src="images/75/new pfp.jpg" alt="gungnir" width="460" height="345">
-        <img class="photo" src="images/75/Graff Letters.png" alt="gungnir" width="460" height="345">
-        <img class="photo" src="images/75/screenshot.png" alt="gungnir" width="460" height="345">
-        </div>
-
-        <button class="accordion" id="grad1">Tier 5 ($50)<br><br><p class="subheader">Sketch Pages</p></button>
-        <div class="panel" id="grad1">
-        <p>Individual page of multiple sketches, or a single, more refined sketch. usually for a concept or idea</p>
-        <img class="photo" src="images/50/Outline sketch 1.png" alt="gungnir" width="460" height="345">
-        <img class="photo" src="images/50/Outline Sketch 2.png" alt="gungnir" width="460" height="345">
-        <img class="photo" src="images/50/Pose Sketches 1.png" alt="gungnir" width="460" height="345">
-        <img class="photo" src="images/50/Weapon Sketches 1.png" alt="gungnir" width="460" height="345">
-        </div>
-<!--
-    <div class="tierBackground">
-        <h3>Tier 1 ($250)</h3>
-        <h4>Extra Detail</h4>
+	<img alt="bread" class="profile" src="images/profileDONE.png">
+	<header>
+		<h1 class="centerGreen" id="header1" onmouseout="borderChange(this.id, 'Black');" onmouseover="borderChange(this.id, 'White');">TKO Commissions</h1>
+		<aside class="center">
+			BRAVO TKO
+		</aside>
+	</header>
+	<h2 id="hover">You're here because you are interested in a commission. Here is what I offer:</h2>
+		
+  <button class="accordion" id="grad1">Tier 1 ($250)<br>
+		<br>
+		<p class="subheader">Extra Detail</p></button>
+		<div class="panel" id="grad1">
+		  <p>Commissions, generally with a background, with heavy detail and consideration into object shape, lighting, and position in environment</p>
+      <img alt="arch3" class="photo" height="345" id="myImg" src="images/250/arch3.jpg" width="460">
+      <img alt="arch3" class="photo" height="345" src="images/250/gungnir2C.jpg" width="460">
+      <img alt="sicarius1" class="photo" height="345" src="images/250/sicarius1.jpg" width="460">
+      <img alt="sicarius1" class="photo" height="345" src="images/250/com%20-%20RunWilde.jpg" width="460">
     </div>
 
-    <button onmousedown="tier1show()">Show/Hide</button>
-
-    <div id="tier1">
-
-        <ul>
-            <li>Quidem, debitis, maiores eius temporibus soluta at ullam accusantium ipsum perspiciatis minima nemo commodi qui ut voluptatum consequatur officia fugit sunt mollitia?</li>
-        </ul>
-
-        <img class="photo" src="images/250/arch3.jpg" alt="arch3" width="460" height="345">
-        <img class="photo" src="images/250/gungnir2C.jpg" alt="arch3" width="460" height="345">
-        <img class="photo" src="images/250/sicarius1.jpg" alt="sicarius1" width="460" height="345">
-        
+  
+  <button class="accordion" id="grad1">Tier 2 ($200)<br>
+	  <p class="subheader">with Background</p></button>
+    <div class="panel" id="grad1">
+	    <p>Commissions with a background and character in the foreground, with consideration to detail</p>
+      <img alt="coach" class="photo" height="345" src="images/200/Chief_infinite.jpg" width="460">
+      <img alt="cozplayer" class="photo" height="345" src="images/200/cozplayer.jpg" width="460">
+      <img alt="Umbrxs2" class="photo" height="345" src="images/200/Umbrxs2.jpg" width="460">
+      <img alt="us" class="photo" height="345" src="images/200/us.jpg" width="460">
+      <img alt="us" class="photo" height="345" src="images/200/IMP%20filter.jpg" width="460">
     </div>
-    
-    <div class="tierBackground">
-        <h3>Tier 2 ($200)</h3>
-        <h4>Model + Background</h4>
+  
+  <button class="accordion" id="grad1">Tier 3 ($100)<br>
+	  <p class="subheader">without background</p></button>
+	  <div class="panel" id="grad1">
+	  <p>Commissions with a single full-body character, with some level of detail and no background</p>
+      <img alt="kotsalyn" class="photo" height="345" src="images/100a/kotsalyn.jpg" width="460">
+      <img alt="kotsalyn" class="photo" height="345" src="images/100a/Com%20-%20Bruncher%202.jpg" width="460">
     </div>
-
-    <button onmousedown="tier2show()">Show/Hide</button>
-        
-    
-    <div id="tier2">
-        <ul>
-            <li>Vel, maiores maxime natus officia eum, nam atque placeat, itaque dolorem minus autem alias dolorum neque facere pariatur? Quaerat aliquid a culpa.</li>
-        </ul>
-
-        <img class="photo" src="images/200/coach.jpg" alt="coach" width="460" height="345">
-        <img class="photo" src="images/200/cozplayer.jpg" alt="cozplayer" width="460" height="345">
-        <img class="photo" src="images/200/Umbrxs2.jpg" alt="Umbrxs2" width="460" height="345">
-        <img class="photo" src="images/200/us.jpg" alt="us" width="460" height="345">
+  
+  <button class="accordion" id="grad1">Tier 3b ($100)<br>
+	  <p class="subheader">Half-Body</p></button>
+	  <div class="panel" id="grad1">
+	  <p>Commissions composed of a character from the torso-up, with some level of detail</p>
+      <img alt="gungnir" class="photo" height="345" src="images/100b/gungnir.jpg" width="460">
     </div>
-
-    <div class="tierBackground">
-        <h3>Tier 3 ($100)</h3>
-        <h4>Model w/o Background</h4>   
+      
+  <button class="accordion" id="grad1">Tier 4 ($75)<br>
+	  <p class="subheader">Cartoon/PFP</p></button>
+	  <div class="panel" id="grad1">
+	  <p>Commissioned profile pictures ,typically in a ‘cartoon’ format</p>
+      <img alt="gungnir" class="photo" height="345" src="images/75/new%20pfp.jpg" width="460">
+      <img alt="gungnir" class="photo" height="345" src="images/75/Graff%20Letters.png" width="460">
+      <img alt="gungnir" class="photo" height="345" src="images/75/screenshot.png" width="460">
     </div>
-
-    <button onmousedown="tier3ashow()">Show/Hide</button>
-
-    <div id="tier3a">
-        <ul>
-            <li>Dignissimos nesciunt vero vitae laborum! Explicabo beatae molestiae quisquam quibusdam id sunt, nobis libero rerum, ipsam eos est ad labore possimus mollitia.</li>
-        </ul>
-
-        <img class="photo" src="images/100.1/kotsalyn.jpg" alt="kotsalyn" width="460" height="345">
-    </div>
-    
-    <div class="tierBackground">
-        <h4>Model Half-Body</h4>
-    </div>   
-
-    <button onmousedown="tier3bshow()">Show/Hide</button>
-    
-    <div id="tier3b">
-        <ul>
-            <li>Vel, maiores maxime natus officia eum, nam atque placeat, itaque dolorem minus autem alias dolorum neque facere pariatur? Quaerat aliquid a culpa.</li>
-        </ul>
-    
-
-        <img class="photo" src="images/100.2/gungnir.jpg" alt="gungnir" width="460" height="345">
+      
+  <button class="accordion" id="grad1">Tier 5 ($50)<br>
+	  <p class="subheader">Sketch Pages</p></button>
+	  <div class="panel" id="grad1">
+	  <p>Individual page of multiple sketches, or a single, more refined sketch. usually for a concept or idea</p>
+      <img alt="gungnir" class="photo" height="345" src="images/50/Outline%20sketch%201.png" width="460">
+      <img alt="gungnir" class="photo" height="345" src="images/50/Outline%20Sketch%202.png" width="460">
+      <img alt="gungnir" class="photo" height="345" src="images/50/Pose%20Sketches%201.png" width="460">
+      <img alt="gungnir" class="photo" height="345" src="images/50/Weapon%20Sketches%201.png" width="460">
     </div>
 
-    <div class="tierBackground">
-        <h3>Tier 4 ($50)</h3>
-        <h4>Cartoon + Profile Pictures</h4> 
+	<hr>
+	<div class="mememe" id="grad1" onmouseout="borderChange(this.id, 'Black');" onmouseover="borderChange(this.id, 'White');">
+		<h2>Additional information</h2>
+		<h3>Options for adding extra elements to a commission</h3>
+		<p>Initial Character: $100</p>
+		<p>Additional Character: $75</p>
+		<p>Background: $60</p>
+		<p>Additional Item, Object / Weapon: $25</p>
+		<p>Visual FX: $30</p>
+		<h3>All Commission Rates are decided through previous transactions from customers. If there are any other specific options that you would like to discuss for a commission, please message @bravo.fyc on Instagram, or email lybtek@gmail.com.</h3>
 
-    </div>   
-    
-    <button onmousedown="tier4show()">Show/Hide</button> 
-    
-    <div id="tier4">    
-        <ul>
-            <li>Quidem, debitis, maiores eius temporibus soluta at ullam accusantium ipsum perspiciatis minima nemo commodi qui ut voluptatum consequatur officia fugit sunt mollitia?</li>
-        </ul>
+	</div>
+  
+  <script src="bravoScript.js"></script> 
 
-        <img class="photo" src="images/50/PFP.jpg" alt="gungnir" width="460" height="345">
-    </div>
-        -->
-    
-    <hr>
-   <div id="grad1"> 
-    <h2>Additional information</h2>
-    <h3>Options for adding extra elements to a commission</h3>
-    <p>Initial Character: $100</p>
-    <p>Additional Character: $75</p>
-    <p>Background: $60</p>
-    <p>Additional Item, Object / Weapon: $25</p>
-    <p>Visual FX: $30</p>
-
-    <h3>All Commission Rates are decided through previous transactions from customers. If there are any other specific options that you would like to discuss for a commission, please message @bravo.fyc on Instagram, or email lybtek@gmail.com.</h3>
-
-    
-<script>
-function tier1show() {
-  var x = document.getElementById("tier1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
-
-function tier2show() {
-  var x = document.getElementById("tier2");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
-
-function tier3ashow() {
-  var x = document.getElementById("tier3a");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
-
-function tier3bshow() {
-  var x = document.getElementById("tier3b");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
-
-function tier4show() {
-  var x = document.getElementById("tier4");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
- //
- //
- //
- //
- //
-
-
-</script>
 </body>
 </html>
