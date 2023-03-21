@@ -20,10 +20,8 @@ body {
 
 	object-fit: cover;
 	max-width:100%;
-	border-top: 2px white;
-	border-left: 2px white;
-	border-style: solid;
-	margin:auto;
+	border-top: 2px white solid;
+	border-left: 2px white solid;
 	
 }
 #tier1, #tier2, #tier3a, #tier3b, #tier4 {
