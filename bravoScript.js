@@ -81,3 +81,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+function borderChange(id, color) {
+	document.getElementById(id).style.borderColor = color;
+  }
